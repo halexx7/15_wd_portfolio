@@ -1,0 +1,38 @@
+.footer__item {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    padding: 50px 0;
+
+    background-color: $blue;
+}
+
+.footer__name {
+    padding-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.56rem;
+    color: $white;
+}
+
+.footer__copy {
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.3rem;
+
+    color: $white;
+
+    &::before {
+        content: '\00A9';
+    }
+}
+
+.social {
+    margin-left: 22px;
+}

@@ -3,18 +3,32 @@
 
 /* Default styles */
 html {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 body {
     margin: 0;
+    padding: 0;
 
-    background-color: $gray;
-
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: $black;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
+
+    /* Сглаживаем шрифты */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 *,
@@ -23,13 +37,38 @@ body {
     box-sizing: border-box;
 }
 
+/* Сбрасываем по умолчанию все отступы заголовков */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Сбрасываем отступы и стилизацию списков */
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Прописываем класс для адаптивных картинок */
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* Bootstrap */
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "../../../node_modules/bootstrap/scss/variables";
-@import "../../../node_modules/bootstrap/scss/mixins";
-@import "../../../node_modules/bootstrap/scss/grid";
+//@import "../../../node_modules/bootstrap/scss/functions";
+//@import "../../../node_modules/bootstrap/scss/variables";
+//@import "../../../node_modules/bootstrap/scss/mixins";
+//@import "../../../node_modules/bootstrap/scss/grid";
 
 
 /* Blocks */
 @import "blocks/header";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/work";
+@import "blocks/photo";
+@import "blocks/feedback";
+@import "blocks/footer";

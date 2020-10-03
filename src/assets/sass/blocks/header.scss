@@ -1,3 +1,58 @@
 .header {
-    background-color: red;
+    padding-top: 3.56rem;
+
+    background: $bg_gray;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.heder__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__link {
+
+    font-family: 'Revalia', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    text-align: center;
+    color: $blue;
+    text-decoration: none;
+
+    &:visited {
+        color: $blue;
+    }
+}
+
+.nav {
+
+}
+
+.nav__link {
+    margin-left: 2.62rem;
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.63rem;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: $black;
+}
+
+.nav__link--active {
+    color: $blue;
 }
