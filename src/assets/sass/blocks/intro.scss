@@ -1,14 +1,29 @@
 .intro {
-    height: 700px;
+    min-height: 700px;
     padding-top: 16rem;
 
     background: $bg_gray;
 
     position: relative;
+
+    @media (max-width: $breakpoint_xl) {
+        padding-top: 10.87rem;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        padding-top: 6.87rem;
+    }
+
 }
 
 .intro__inner {
     display: flex;
+
+    @media (max-width: $breakpoint_xl) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .intro__box-left {
@@ -26,6 +41,17 @@
     align-items: flex-start;
     flex-grow: 1;
     flex-basis: 50%;
+
+    @media (max-width: $breakpoint_xl) {
+        margin-top: 3.75rem;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        margin-top: 1.75rem;
+    }
 }
 
 .intro__title {
@@ -34,6 +60,13 @@
     line-height: 4.9rem;
 
     color: $black;
+
+    @media (max-width: $breakpoint_sm) {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 4.9rem;
+        text-align: center;
+    }
 }
 
 .intro__text {
@@ -44,6 +77,17 @@
     line-height: 1.62rem;
 
     color: $gray_text;
+
+    @media (max-width: $breakpoint_xl) {
+        margin-top: 2.75rem;
+        max-width: 600px;
+
+        text-align: center;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        margin-top: 1.5rem;
+    }
 }
 
 .btn {
@@ -61,4 +105,19 @@
     text-decoration: none;
 
     color: $white;
+
+}
+
+.btn__intro {
+
+    @media (max-width: $breakpoint_xl) {
+        margin-bottom: 3.56rem;
+    }
+
+     @media (max-width: $breakpoint_sm) {
+        padding: .8rem 1.8rem;
+        margin-bottom: 2.56rem;
+
+        font-size: .8rem;
+    }
 }

@@ -1,7 +1,11 @@
 .feedback {
-    padding: 100px 0;
+    padding: 6.25rem 0;
 
     background-color: $bg_gray;
+
+    @media (max-width: $breakpoint_sm) {
+        padding: 3.25rem 0;
+    }
 }
 
 .container__feedback {
@@ -24,6 +28,11 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+
+    @media (max-width: $breakpoint_sm) {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 }
 
 .form__min {
@@ -36,10 +45,18 @@
     color: $form_text;
 
     border: none;
+
+    @media (max-width: $breakpoint_sm) {
+        margin-bottom: 1.25rem;
+    }
 }
 
 .form__min--mr {
     margin-right: 30px;
+
+    @media (max-width: $breakpoint_sm) {
+        margin-right: 0;
+    }
 }
 
 .form__max {
@@ -62,4 +79,9 @@
     font-size: 0.87rem;
     line-height: 1.44rem;
     letter-spacing: 0.15em;
+
+    @media (max-width: $breakpoint_sm) {
+        padding: .8rem 1.8rem;
+        font-size: .8rem;
+    }
 }

@@ -8,6 +8,10 @@
     left: 0;
     right: 0;
     z-index: 1000;
+
+    @media (max-width: $breakpoint_sm) {
+        padding-top: 1.56rem;
+    }
 }
 
 .heder__inner {
@@ -37,7 +41,9 @@
 }
 
 .nav {
-
+    @media (max-width: $breakpoint_xl) {
+        display: none;
+    }
 }
 
 .nav__link {

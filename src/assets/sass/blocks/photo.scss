@@ -15,6 +15,20 @@
     &:hover .photo__content {
         opacity: 1;
     }
+
+    @media (max-width: $breakpoint_xl) {
+        width: 50%;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        width: 100%;
+    }
+}
+
+.photo__sm-display-none {
+    @media (max-width: $breakpoint_sm) {
+        display: none;
+    }
 }
 
 .photo__img {
@@ -63,9 +77,15 @@
 .photo__tools {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
-    margin-top: 72px;
-    margin-bottom: 100px;
+    margin-top: 4.5rem;
+    margin-bottom: 6.25rem;
+
+    @media (max-width: $breakpoint_sm) {
+        margin-top: 3.5rem;
+        margin-bottom: 4.25rem;
+    }
 }
 
 .tools__img {

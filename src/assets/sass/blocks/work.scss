@@ -3,6 +3,10 @@
     height: 100%;
 
     background: $bg_gray;
+
+    @media (max-width: $breakpoint_sm) {
+        padding: 3.5rem 0;
+    }
 }
 
 .work__box {
@@ -18,7 +22,15 @@
 }
 
 .work__video {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+    padding: 0 16px;
+
+    @media (max-width: 1200px) {
+        width: 650px;
+        height: 350px;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        width: 350px;
+        height: 170px;
+    }
 }

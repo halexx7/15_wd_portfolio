@@ -1,0 +1,48 @@
+.burger {
+    display: none;
+    padding: 9px 2px;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+
+    @media (max-width: $breakpoint_xl) {
+        display: block;
+    }
+}
+
+.burger__item {
+    display: block;
+    width: 28px;
+    height: 3px;
+
+    background-color: $blue;
+
+    font-size: 0;
+    color: transparent;
+
+    position: relative;
+
+    &::before, &::after {
+        content: "";
+        height: 100%;
+
+        background-color: $blue;
+
+        position: absolute;
+
+        right: 0;
+        z-index: 1;
+        }
+
+    &::before {
+        width: 30px;
+        top: 8px;
+    }
+
+    &::after {
+        width: 26px;
+        top: -8px;
+    }
+}
